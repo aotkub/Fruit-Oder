@@ -1,0 +1,85 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(to bottom, #fdf6ec, #f7ffe5);
+    background-image: url('/images/background/4038416.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    max-width: 640px;
+    width: 100%;
+    border: 4px dashed #ffb347;
+}
+
+h1 {
+    text-align: center;
+    color: #b14f46;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    color: #b14f46;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #555;
+}
+
+select,
+input,
+button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.other-input {
+    display: none;
+    margin-top: 0.5rem;
+}
+
+button {
+    background-color: #a5d85c;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.send_oder:hover {
+    background-color: #92c94d;
+}
+
+.fruit-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* เมื่อหน้าจอเล็กกว่า 768px ให้จัดชิดซ้าย */
+@media (max-width: 768px) {
+    .fruit-container {
+        justify-content: flex-start;
+    }
+}

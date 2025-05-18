@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>รับออเดอร์ผลไม้ 🍉🍊🍍</title>
+  <link rel="icon" href="images/icon/durian.png" type="image/png">
+
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Google Font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
+  </style>
+
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <link href="/style.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+  <div class="form-container">
+    <img src="/images/icon/durian.png" alt="Durian" style="display:block; margin: 0 auto 1rem; width: 120px;">
+    <h1>รับออเดอร์ผลไม้</h1>
+
+    <div class="fruit-container">
+
+      <!-- หมวดทุเรียน -->
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <h4>ทุเรียน</h4>
+        <span style="color: green; font-size: 15px;">
+          <img src="/images/icon/durian 1.png" alt="durian icon" style="width: 35px;">
+          *หมอนทอง โลละ = 125 ₿
+        </span>
+        <!-- <span style="color: saddlebrown; font-size: 15px;">
+          <img src="/images/icon/chanee (2).png" alt="durian icon" style="width: 30px;">
+          *ชะนี โลละ = 100 ₿
+        </span>
+        <span style="color: rgb(171, 109, 27); font-size: 15px;">
+          <img src="/images/icon/Durio Zibethinus (3).png" alt="durian icon" style="width: 25px;">
+          *นกกระจิบ โลละ = 100 ₿
+        </span> -->
+      </div>
+
+      <!-- หมวดผลไม้จำนวนที่ต้องการ -->
+      <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 10px;">
+        <h4>ผลไม้ต่างๆ</h4>
+        <span style="color: red; font-size: 15px;">
+          <img src="/images/icon/rambutan.png" alt="rambutan icon" style="width: 30px;">
+          *เงาะ โลละ = 50 ₿
+        </span>
+        <span style="color: purple; font-size: 15px;">
+          <img src="/images/icon/mangosteen.png" alt="mangosteen icon" style="width: 30px;">
+          *มังคุด โลละ = 50 ₿
+        </span>
+      </div>
+
+    </div>
+
+
+    <form id="fruitForm">
+      <label>ชื่อ</label>
+      <input type="text" name="entry.1118389521" placeholder="กรุณากรอกชื่อ" required />
+
+      <!-- หมอนเล็ก -->
+      <label>หมอนทองเล็ก <img src="/images/icon/Monthong_small.png" alt="icon" style="width: 50px;"></label>
+      <select name="entry.1167556332" id="small">
+        <option value="">-- เลือก --</option>
+        <option value="1">1 ลูก</option>
+        <option value="2">2 ลูก</option>
+        <option value="3">3 ลูก</option>
+        <option value="4">4 ลูก</option>
+        <option value="__other_option__">จำนวนที่ต้องการ</option>
+      </select>
+      <input type="number" id="small-other" class="other-input" placeholder="จำนวนกี่ลูก" />
+      <input type="hidden" name="entry.1167556332.other_option_response" id="small-hidden" />
+
+      <!-- หมอนกลาง -->
+      <label>หมอนทองกลาง <img src="/images/icon/Monthong_mid.png" alt="icon" style="width: 40px;"></label>
+      <select name="entry.1864900719" id="middle">
+        <option value="">-- เลือก --</option>
+        <option value="1">1 ลูก</option>
+        <option value="2">2 ลูก</option>
+        <option value="3">3 ลูก</option>
+        <option value="4">4 ลูก</option>
+        <option value="__other_option__">จำนวนที่ต้องการ</option>
+      </select>
+      <input type="number" id="middle-other" class="other-input" placeholder="จำนวนกี่ลูก" />
+      <input type="hidden" name="entry.1864900719.other_option_response" id="middle-hidden" />
+
+      <!-- หมอนใหญ่ -->
+      <label>หมอนทองใหญ่ <img src="/images/icon/Monthong_big.png" alt="icon" style="width: 40px;"></label>
+      <select name="entry.1568056353" id="large">
+        <option value="">-- เลือก --</option>
+        <option value="1">1 ลูก</option>
+        <option value="2">2 ลูก</option>
+        <option value="3">3 ลูก</option>
+        <option value="4">4 ลูก</option>
+        <option value="__other_option__">จำนวนที่ต้องการ</option>
+      </select>
+      <input type="number" id="large-other" class="other-input" placeholder="จำนวนกี่ลูก" />
+      <input type="hidden" name="entry.1568056353.other_option_response" id="large-hidden" />
+
+      <!-- ชะนี -->
+      <label>ชะนี <img src="/images/icon/chanee.png" alt="icon" style="width: 40px;"></label>
+      <select name="entry.1383881686" id="cha-nee">
+        <option value="">-- เลือก --</option>
+        <option value="1">1 ลูก</option>
+        <option value="2">2 ลูก</option>
+        <option value="3">3 ลูก</option>
+        <option value="4">4 ลูก</option>
+        <option value="__other_option__">จำนวนที่ต้องการ</option>
+      </select>
+      <input type="number" id="cha-nee-other" class="other-input" placeholder="จำนวนกี่ลูก" />
+      <input type="hidden" name="entry.1383881686.other_option_response" id="cha-nee-hidden" />
+
+      <!-- นกกระจิบ -->
+      <!-- <label>นกกระจิบ <img src="/images/icon/Durio Zibethinus (2).png" alt="icon" style="width: 40px;"></label>
+      <select name="entry.1383881686" id="durio-Zibethinus">
+        <option value="">-- เลือก --</option>
+        <option value="1">1 ลูก</option>
+        <option value="2">2 ลูก</option>
+        <option value="3">3 ลูก</option>
+        <option value="4">4 ลูก</option>
+        <option value="__other_option__">จำนวนที่ต้องการ</option>
+      </select>
+      <input type="number" id="durio-Zibethinus-other" class="other-input" placeholder="จำนวนกี่ลูก" />
+      <input type="hidden" name="entry.1383881686.other_option_response" id="durio-Zibethinus-hidden" /> -->
+
+      <!-- เงาะ -->
+      <label>เงาะ <img src="/images/icon/rambutan (1).png" alt="icon" style="width: 40px;"></label>
+      <select name="entry.660389261" id="rambutan">
+        <option value="">-- เลือก --</option>
+        <option value="1">1 โล</option>
+        <option value="2">2 โล</option>
+        <option value="3">3 โล</option>
+        <option value="4">4 โล</option>
+        <option value="__other_option__">จำนวนที่ต้องการ</option>
+      </select>
+      <input type="number" id="rambutan-other" class="other-input" placeholder="จำนวนกี่โล" />
+      <input type="hidden" name="entry.660389261.other_option_response" id="rambutan-hidden" />
+
+      <!-- มังคุด -->
+      <label>มังคุด <img src="/images/icon/mangosteen (1).png" alt="icon" style="width: 40px;"></label>
+      <select name="entry.224948179" id="mangosteen">
+        <option value="">-- เลือก --</option>
+        <option value="1">1 โล</option>
+        <option value="2">2 โล</option>
+        <option value="3">3 โล</option>
+        <option value="4">4 โล</option>
+        <option value="__other_option__">จำนวนที่ต้องการ</option>
+      </select>
+      <input type="number" id="mangosteen-other" class="other-input" placeholder="จำนวนกี่โล" />
+      <input type="hidden" name="entry.224948179.other_option_response" id="mangosteen-hidden" />
+
+      <button type="submit" name="send_oder" class="send_oder">ส่งออเดอร์</button>
+    </form>
+  </div>
+
+  <script src="/main.js"></script>
+</body>
+
+</html>
