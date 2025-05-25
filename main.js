@@ -1,6 +1,9 @@
 const fields = [
     { selectId: "small", otherId: "small-other", hiddenId: "small-hidden" },
+    { selectId: "mid", otherId: "mid-other", hiddenId: "mid-hidden" },
+    { selectId: "big", otherId: "big-other", hiddenId: "big-hidden" },
     { selectId: "durio-Zibethinus", otherId: "durio-Zibethinus-other", hiddenId: "durio-Zibethinus-hidden" },
+    { selectId: "cha-nee", otherId: "cha-nee-other", hiddenId: "cha-nee-hidden" },
     { selectId: "rambutan", otherId: "rambutan-other", hiddenId: "rambutan-hidden" },
     { selectId: "mangosteen", otherId: "mangosteen-other", hiddenId: "mangosteen-hidden" }
 ];
